@@ -1,3 +1,10 @@
 <resources>
     <string name="app_name">Team Void Project</string>
+
+    <string-array name="gender">
+        <item></item>
+        <item><font color="black">Male</font></item>
+        <item><font color="black">Female</font></item>
+    </string-array>
+
 </resources>
