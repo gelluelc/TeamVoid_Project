@@ -37,13 +37,13 @@
         app:layout_constraintVertical_bias="0.422" />
 
     <EditText
-        android:id="@+id/edt_username"
+        android:id="@+id/edt_email"
         android:layout_width="239dp"
         android:layout_height="50dp"
         android:background="@color/white"
         android:backgroundTint="#BFFFFFFF"
         android:ems="10"
-        android:hint="ENTER USERNAME"
+        android:hint="Enter Email"
         android:inputType="textPersonName"
         android:textAlignment="center"
         android:textColor="@color/black"
@@ -62,7 +62,7 @@
         android:background="@color/white"
         android:backgroundTint="#BFFFFFFF"
         android:ems="10"
-        android:hint="ENTER PASSWORD"
+        android:hint="Enter Password"
         android:inputType="textPassword"
         android:textAlignment="center"
         android:textColor="@color/black"
@@ -71,7 +71,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.494"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/edt_username"
+        app:layout_constraintTop_toBottomOf="@+id/edt_email"
         app:layout_constraintVertical_bias="0.034" />
 
     <TextView
@@ -98,7 +98,7 @@
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
         android:layout_marginBottom="32dp"
-        android:background="@drawable/button_regsiter"
+        android:background="@drawable/button_registration"
         android:scaleType="fitCenter"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
