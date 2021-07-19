@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
+
 import android.util.Patterns;
 import android.view.View;
 import android.widget.Button;
@@ -25,6 +26,15 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     private FirebaseAuth mAuth;
 
     private ProgressBar progresslog;
+=======
+import android.view.View;
+import android.widget.Button;
+
+public class MainActivity extends AppCompatActivity implements View.OnClickListener {
+
+    private Button btn_register;
+
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -35,6 +45,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     }
 
     public void initialization(){
+
 
         et_email = findViewById(R.id.edt_email);
         et_password = findViewById(R.id.edt_password);
@@ -51,6 +62,13 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
         btn_register.setOnClickListener(this);
         btn_login.setOnClickListener(this);
+=======
+        btn_register = (Button) findViewById(R.id.id_RegisterButton);
+    }
+
+    public void listeners(){
+        btn_register.setOnClickListener(this);
+
     }
 
     @Override
@@ -59,6 +77,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             case R.id.id_RegisterButton:
                 startActivity(new Intent(this,register.class));
                 break;
+
             case R.id.id_loginButton:
                 validation();
                 break;
@@ -105,5 +124,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                         }
                     }
                 });
+=======
+        }
+
     }
 }

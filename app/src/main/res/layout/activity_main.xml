@@ -98,7 +98,11 @@
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
         android:layout_marginBottom="32dp"
+
         android:background="@drawable/button_registration"
+=======
+        android:background="@drawable/button_regsiter"
+
         android:scaleType="fitCenter"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
